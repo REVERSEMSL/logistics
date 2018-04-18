@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="Public/swiper/swiper.min.css" />
+		<style type="text/css">
+				.swiper-container {
+				    width: 100%;
+				}  
+				.swiper-container img{
+					width: 100%;
+				}
+				.swiper-pagination-bullet-active{
+					background: white;
+				}
+				.swiper-pagination-bullet{
+					border: 1px solid white;
+					opacity: .9;
+					width: 15px;
+					height: 15px;
+				}
+				.swiper-button-prev{
+					background-image: none;
+				}
+				.swiper-button-next{
+					background-image: none;
+				}
+				.swiper-button-next, .swiper-button-prev{
+					font-size: 36px;
+					line-height: 44px;
+					text-align: center;
+					color: white;
+				}
+		</style>
+	</head>
+
+	<body>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="Public/imgs/swiper1.jpg"/></div>
+				<div class="swiper-slide"><img src="Public/imgs/swiper2.jpg"/></div>
+				<div class="swiper-slide"><img src="Public/imgs/swiper3.jpg"/></div>
+			</div>
+			<!-- 如果需要分页器 -->
+			<div class="swiper-pagination"></div>
+
+			<!-- 如果需要导航按钮 -->
+			<div class="swiper-button-prev glyphicon glyphicon-chevron-left"></div>
+			<div class="swiper-button-next glyphicon glyphicon-chevron-right">&gt;</div>
+
+			<!-- 如果需要滚动条 -->
+			<!--<div class="swiper-scrollbar"></div>-->
+		</div>
+		
+	</body>
+		<script src="Public/swiper/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+			
+		var imgindex = 0;
+		var oimg = [];
+		
+		for (var i = 0;i<3;i++) {
+			var img = new Image();
+			img.src =  "Public/imgs/swiper"+(i+1)+".jpg";
+			img.onload = function(){
+				imgindex++;
+				oimg.push(img);
+				if(imgindex == 3){
+//					$('.swiper-slide').each(function(i){
+//						$(this).append(oimg[i]);
+//					})
+					$(".swiper-container").css("height",$(".swiper-container img ").height());
+					console.log($(".swiper-container img ").height())
+					window.onresize = function(){
+						$(".swiper-container").css("height",$(".swiper-container img").height());
+					}	
+				}
+			}
+		}
+		
+		
+		var mySwiper = new Swiper('.swiper-container', {
+			direction: 'horizontal',
+			loop: true,
+			autoplay:true,
+			// 如果需要前进后退按钮
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			 pagination: {
+		      el: '.swiper-pagination',
+		       clickable :true,
+		  },
+			// 如果需要滚动条
+//			scrollbar: {
+//				el: '.swiper-scrollbar',
+//			},
+		})
+	</script>
+
+
+</html>
