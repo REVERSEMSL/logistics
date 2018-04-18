@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="Public/css/list.css">
 		<script src="Public/bootstrap-3.3.7/js/bootstrap.min.js"></script>
 		
+		
 	</head>
 	<body>
 		<div class="nav"></div>

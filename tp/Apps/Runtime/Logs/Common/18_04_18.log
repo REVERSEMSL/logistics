@@ -138,3 +138,57 @@ INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
 ERR: 无法加载模块:Static
 >>>>>>> 9661e03bd19f98ba4e4ad5b946741130688e769b
 
+[ 2018-04-18T20:42:30+08:00 ] ::1 /sbzsj/tp/static/images/serli/5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+ERR: 无法加载模块:Static
+
+[ 2018-04-18T20:42:30+08:00 ] ::1 /sbzsj/tp/static/images/serli/3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001396s ]
+ERR: 无法加载模块:Static
+
+[ 2018-04-18T20:42:30+08:00 ] ::1 /sbzsj/tp/static/images/serli/4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+ERR: 无法加载模块:Static
+
+[ 2018-04-18T20:42:30+08:00 ] ::1 /sbzsj/tp/static/images/serli/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+ERR: 无法加载模块:Static
+
+[ 2018-04-18T20:42:30+08:00 ] ::1 /sbzsj/tp/static/images/serli/6.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+ERR: 无法加载模块:Static
+
+[ 2018-04-18T20:42:30+08:00 ] ::1 /sbzsj/tp/static/images/serli/2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+ERR: 无法加载模块:Static
+
+[ 2018-04-18T20:42:30+08:00 ] ::1 /sbzsj/tp/static/images/serli/9.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+ERR: 无法加载模块:Static
+
+[ 2018-04-18T20:42:30+08:00 ] ::1 /sbzsj/tp/static/images/serli/8.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+ERR: 无法加载模块:Static
+
+[ 2018-04-18T20:42:30+08:00 ] ::1 /sbzsj/tp/static/images/serli/7.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+ERR: 无法加载模块:Static
+
