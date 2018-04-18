@@ -1,0 +1,104 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.main .container{
+	border: 1px solid red;
+}
+.about_m_l p{
+	height: 50px;
+	line-height: 50px;
+	position: relative;
+	padding-left: 40px;
+	color: white;
+	font-size: 16px;
+
+}
+.about_m_l a{
+    border: 1px solid #d1d1d1;
+    background-color: #E5E5E5;
+    color: #444;
+    border-top: none;
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 2em;
+    font-size: 15px;
+}
+.about_m_l p{
+	margin:0;
+}
+.about_m_l p:before{
+	display: block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 15px;
+    top: 20px;
+}
+.tit-ab p{
+	background-color: #EC6100;
+}
+.tit-ol p{
+	background-color: #2C77DE;
+}
+.tit-co p{
+	background-color: #CF2F04;
+}
+
+h1{
+	font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+    color: #00389C;
+    padding-left: 20px;
+    position: relative;
+}
+.title h1:before {
+    display: block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: url('../imgs/about_1.png');
+    left: 0px;
+    top: 5px;
+}
+.title h1 span {
+    font-size: 14px;
+    font-weight: normal;
+    color: #888;
+    padding-left: 10px;
+}
+.intro-con p {
+    line-height: 2;
+    font-size: 15px;
+    text-indent: 2em;
+    margin: 0 0 10px;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+
+/*online*/
+@media only screen and (max-width: 767px){
+	.onlinepg li input {
+   	 width: 100%;
+	}
+}
+.onlinepg p{
+    margin: 0 0 10px;
+}
+.onlinepg li input {
+    height: 30px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #CCCCCC;
+}
+.onlinepg li p i {
+    color: #F00;
+    padding-right: 10px;
+}
