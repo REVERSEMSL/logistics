@@ -1,15 +1,10 @@
+
 *{margin:0; padding:0; box-sizing: border-box; font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;}
 li{list-style: none;}
 .navbar{margin-bottom: 0;}
 body{background: #f1f1f1;}
 .sec{padding:50px 0;}
 .carousel-control.left,.carousel-control.right{background-image: none;}
-/*nav*/
-.navbar{background-color: #FFFFFF;}
-.navbar-brand{padding:10px;}
-.nav{padding:10px;}
-.nav li a{padding:15px 25px; font-size: 15px;}
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{color: #FFFFFF; background-color: #2C77DE;}
 /*online-add*/
 .online-add>div{ background-color: #CF2F04;}
 .square-title li a:hover{color: #EC6100;}
