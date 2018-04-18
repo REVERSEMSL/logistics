@@ -102,3 +102,11 @@ h1{
     color: #F00;
     padding-right: 10px;
 }
+.onlinepg>div>p{
+    padding-left: 10px;
+    border-left: 2px solid #00389C;
+    line-height: 1;
+    margin: 5px 0 10px;
+    font-size: 16px;
+    color: #00389C;
+}
