@@ -76,7 +76,7 @@ footer p a{color: #666;}
 .tit-co{background-color: #CF2F04;}
 .title{padding:10px 0 15px; border-bottom: 1px solid #028BCF;}
 .title h1{font-size: 18px; margin:0; font-weight: bold; color: #00389C; padding-left: 20px; position: relative;}
-.title h1:before{display: block; content: ""; width:10px; height: 10px; position: absolute; background: url(../images/a.png); left: 0px; top:5px}
+.title h1:before{display: block; content: ""; width:10px; height: 10px; position: absolute; background: url("../imgs/about_1.png"); left: 0px; top:5px}
 .title h1 span{font-size: 14px; font-weight: normal; color: #888; padding-left: 10px;}
 /*about*/
 .con-pad{padding:10px; padding-top:30px;}

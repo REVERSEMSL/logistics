@@ -102,3 +102,33 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
 
+[ 2018-04-18T21:33:42+08:00 ] ::1 /sbzsj/tp/Public/images/a.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+
+[ 2018-04-18T21:34:19+08:00 ] ::1 /sbzsj/tp/Public/images/a.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+
+[ 2018-04-18T21:36:08+08:00 ] ::1 /sbzsj/tp/Public/css/Public/imgs/about_1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+
+[ 2018-04-18T21:36:10+08:00 ] ::1 /sbzsj/tp/Public/css/Public/imgs/about_1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+
+[ 2018-04-18T21:36:21+08:00 ] ::1 /sbzsj/tp/Public/css/Public/imgs/about_1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+
+[ 2018-04-18T21:36:40+08:00 ] ::1 /sbzsj/tp/Public/css/Public/imgs/about_1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+
