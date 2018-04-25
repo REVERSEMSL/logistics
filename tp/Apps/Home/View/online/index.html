@@ -15,36 +15,7 @@
 	<body>
 		<div class="nav"></div>
 		<div class="sildeshow"></div>
-		<!-- <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-			</ol>
 
-			<div class="carousel-inner" role="listbox">
-				<div class="item active">
-					<img src="static/images/banner/banner1.jpg" >
-				</div>
-				<div class="item">
-					<img src="static/images/banner/banner2.jpg" >
-				</div>
-				<div class="item">
-					<img src="static/images/banner/banner3.jpg" >
-				</div>
-			</div>
-
-			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
-		</div> -->
-		
-		<!--aboupg-->
 		<div class="sec aboutpg container">
 			<div class="pg-nav col-sm-3">
 				<div class="tit-ab">
@@ -75,24 +46,27 @@
 					</h1>
 				</section>
 				<div class="onlinepg con-pad">
+					<form action="" method="post">
+						
+					
 					<div>
 						<p>发货人信息</p>
 						<ul class="row">
 							<li class="col-sm-6 col-xs-12">
 								<p><i>*</i>发货人：</p>
-								<input type="text"/>
+								<input type="text" name="u_name" id="u_name" />
 							</li>
 							<li class="col-sm-6 col-xs-12">
 								<p><i>*</i>手机</p>
-								<input type="text"/>
+								<input type="text" name="u_tel" id="u_del" />
 							</li>
 							<li class="col-sm-6 col-xs-12">
-								<p>固定电话</p>
-								<input type="text"/>
+								<p>邮箱地址</p>
+								<input type="text" name="u_mail" id="u_mail" />
 							</li>
 							<li class="col-sm-6 col-xs-12">
 								<p><i>*</i>发货地址</p>
-								<input type="text"/>
+								<input type="text" name="u_address" id="u_address" />
 							</li>
 						</ul>
 					</div>
@@ -101,19 +75,19 @@
 						<ul class="row">
 							<li class="col-sm-6 col-xs-12">
 								<p><i>*</i>收货人：</p>
-								<input type="text"/>
+								<input type="text" name="g_name" id="g_name" />
 							</li>
 							<li class="col-sm-6 col-xs-12">
 								<p><i>*</i>手机</p>
-								<input type="text"/>
+								<input type="text" name="g_tel" id="g_tel" />
 							</li>
 							<li class="col-sm-6 col-xs-12">
-								<p>固定电话</p>
-								<input type="text"/>
+								<p>邮箱地址</p>
+								<input type="text" name="g_mail" id="g_mail" />
 							</li>
 							<li class="col-sm-6 col-xs-12">
-								<p><i>*</i>发货地址</p>
-								<input type="text"/>
+								<p><i>*</i>收货地址</p>
+								<input type="text" name="g_address" id="g_address" />
 							</li>
 						</ul>
 					</div>
@@ -122,31 +96,33 @@
 						<ul class="row">
 							<li class="col-sm-6 col-xs-12">
 								<p><i>*</i>货物名称：</p>
-								<input type="text"/>
+								<input type="text" name="goods" id="goods" />
 							</li>
 							<li class="col-sm-6 col-xs-12">
 								<p>报价申明（>100元）：</p>
-								<input type="text"/>
+								<input type="text" name="price" id="price" />
 							</li>
 							<li class="col-sm-6 col-xs-12">
 								<p>货物重量：</p>
-								<input type="text"/>
+								<input type="text" name="weight" id="weight" />
 							</li>
 							<li class="col-sm-6 col-xs-12">
 								<p>货物体积：</p>
-								<input type="text"/>
+								<input type="text" name="size"  id="size" />
 							</li>
 							<li class="sm">
 								<p>注：我们的工作人员会在接货时重新称重，此估算仅供参考。</p>
 							</li>
 						</ul>
 					</div>
+					
 					<div> 
 						<p>备注信息</p>
-						<textarea></textarea>
+						<textarea name="textn" id="textn"></textarea>
 					</div>
+					</form>
 					<p class="mes">注：我们的工作人员在收到发货请求会主动联系，请注意接听电话。</p>
-					<input type="button" value="立即发送" />
+					<input type="button" class="online_btn" value="立即发送" />
 				</div>
 			</div>
 		</div>
@@ -156,5 +132,22 @@
 	<script type="text/javascript">
 		$(".nav").load("Apps/Home/View/nav.html");
 		$(".sildeshow").load("Apps/Home/View/slideshow.html");
+		$(".online_btn").on('click', function() {
+			var form1 = new FormData($('form')[0]);
+			// form1.append('textn',$("#textn").val());
+			console.log(form1);
+			$.ajax({
+				url: "{:U("Home/Online/addolder")}",
+				type: 'post',
+				dataType: 'json',
+				data: form1,
+				contentType:false, //禁止jq修改数据类型
+				processData:false,
+				async:true,
+				success:function (data) {
+					alert(data);
+				}
+			});
+		});
 	</script>
 </html>

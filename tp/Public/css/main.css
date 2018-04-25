@@ -143,11 +143,11 @@ footer p a{color: #666;}
 }
 @media only screen and (max-width: 767px) {
 	.onlinepg>div li input{width:100%;}
-	.navbar-brand{padding:0 !important;}
+	/*.navbar-brand{padding:0 !important;}*/
 	.sec{padding-top: 20px; padding-bottom: 0;}
 	.foot-nav{display: none;}
 	footer{margin-bottom: 50px;}
-	.navbar-header{padding:10px 0;}
+	/*.navbar-header{padding:10px 0;}*/
 	.fl{display: block;}
 	.face{display: none;}
 }
